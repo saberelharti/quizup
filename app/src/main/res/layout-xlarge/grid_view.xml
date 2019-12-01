@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/grid_view">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:id="@+id/grid_item_card"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:drawingCacheQuality="auto"/>
+
+    <TextView
+        android:id="@+id/grid_item_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="40sp"
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:text="Psycho"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/grid_item_card"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

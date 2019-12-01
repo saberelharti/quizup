@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="152dp"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal"
+    android:id="@+id/start_test"
+    android:gravity="center"
+    android:layout_alignParentTop="true"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:src="@drawable/bg_top"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/imageView3" />
+
+    <ImageView
+        android:src="@drawable/ic_white_quizup"
+        android:id="@+id/imageButton"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="60dp"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_category"
+        android:text="Amour"
+        android:textColor="@color/colorWhite"
+        android:textSize="40sp"
+        android:textAllCaps="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <ImageButton
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:id="@+id/share"
+        android:src="@drawable/ic_share"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="55dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:id="@+id/devider"
+        android:background="@drawable/devider_background_up"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

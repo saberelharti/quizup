@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_intro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="net.dm73.quizitup.SplashActivity">
+
+    <net.dm73.quizitup.AspectRatioImageView
+        android:id="@+id/imageBackground"
+        android:src="@drawable/intro_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true" />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/logoIntro"
+        android:src="@drawable/log"
+        android:scaleType="centerInside"
+        android:layout_marginTop="-100dp"
+        android:layout_below="@+id/imageBackground"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/quizupName"
+        android:src="@drawable/quizup_name"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/logoIntro"/>
+
+    <ImageView
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/quizupSubName"
+        android:src="@drawable/quizup_subname"
+        android:scaleType="centerInside"
+        android:layout_below="@+id/quizupName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"/>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/spinView"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:visibility="visible"
+        app:SpinKit_Color="#b4a7c4"
+        app:SpinKit_Style="ThreeBounce"
+        style="@style/SpinKitView.Large.Circle"/>
+
+</RelativeLayout>
+

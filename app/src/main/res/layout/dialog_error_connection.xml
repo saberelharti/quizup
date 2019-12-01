@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_dialog">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textError"
+        android:text="@string/hors_connexion"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:padding="7dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/colseDialog"
+        android:text="OK"
+        android:textSize="19dp"
+        android:textColor="@color/colorPrimary"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/textError"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

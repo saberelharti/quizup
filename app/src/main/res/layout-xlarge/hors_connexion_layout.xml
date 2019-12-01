@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/hors_connexion_layout"
+    android:gravity="center_vertical"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/problem_cloud"
+        android:src="@drawable/ic_cloud_prob"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vérifier le signal de votre connexion et appuyer sur le cloud pour essayer à nouveau"
+        android:textSize="22sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:layout_below="@+id/problem_cloud"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

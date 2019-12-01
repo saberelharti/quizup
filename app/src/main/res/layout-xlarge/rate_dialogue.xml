@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="30dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/dialogHeader"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/logoPlay"
+            android:src="@drawable/ic_google_play"
+            android:scaleType="centerInside"/>
+
+    </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialogTitle"
+            android:text="Évaluez Quiz UP !"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/dialogHeader"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialogText"
+            android:text="Si vous aimez (ou même détestez) Quiz UP, une cote nous aiderait vraiment. Merci!"
+            android:textSize="20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/dialogTitle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/laterButton"
+            android:text="Plus tard"
+            android:textSize="22sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/dialogText"
+            android:layout_toStartOf="@+id/goToPlay"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:layout_toLeftOf="@+id/goToPlay" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/goToPlay"
+            android:text="google play"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22sp"
+            android:paddingRight="20dp"
+            android:layout_below="@+id/dialogText"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"/>
+
+</RelativeLayout>
+

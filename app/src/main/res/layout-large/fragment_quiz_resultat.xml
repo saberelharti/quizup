@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/quiz"
+    android:layout_below="@+id/devider"
+    android:layout_above="@+id/devider_down">
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:id="@+id/spinResult"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+        app:SpinKit_Style="Pulse"
+        style="@style/SpinKitView.Large.Circle"/>
+
+    <RelativeLayout
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_below="@+id/textDesc"
+        android:background="@drawable/round_layout"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:id="@+id/resultat"
+            android:text="Resultat"
+            android:textColor="#fff"
+            android:background="@drawable/round_button"
+            android:elevation="12dp"
+            android:shadowColor="#000"
+            android:textSize="24sp"
+            android:textAllCaps="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

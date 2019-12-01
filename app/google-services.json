@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1007671704982",
+    "firebase_url": "https://quizup-fa40f.firebaseio.com",
+    "project_id": "quizup-fa40f",
+    "storage_bucket": "quizup-fa40f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1007671704982:android:94c2227f4f37e814",
+        "android_client_info": {
+          "package_name": "net.dm73.quizitup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1007671704982-986l2h3p6m6h8fo1is62dvop0i2k5ekk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKH3BQia3QQk3fPEPUaq2A4ahAPb1EsWo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp"
+    android:background="?attr/selectableItemBackground" >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:id="@+id/img_quiz"
+            android:scaleType="centerCrop"
+            android:layout_centerVertical="true"
+            android:drawingCacheQuality="auto" />
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:id="@+id/badgeNew"
+            android:layout_alignBottom="@+id/img_quiz"
+            android:layout_alignRight="@+id/img_quiz"
+            android:drawingCacheQuality="auto"
+            android:visibility="gone"
+            android:src="@drawable/ic_new"/>
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:id="@+id/checked"
+            android:layout_alignBottom="@+id/img_quiz"
+            android:layout_alignRight="@+id/img_quiz"
+            android:drawingCacheQuality="auto"
+            android:visibility="gone"
+            android:src="@drawable/ic_check"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_quiz"
+            android:text="text"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp"
+            android:padding="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/img_quiz"
+            android:layout_toRightOf="@+id/img_quiz" />
+
+</RelativeLayout>

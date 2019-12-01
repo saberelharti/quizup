@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_intro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="net.dm73.quizitup.SplashActivity">
+
+    <net.dm73.quizitup.AspectRatioImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/intro_quiz_land"
+        android:scaleType="fitStart"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"/>
+
+
+    <ImageView
+        android:id="@+id/quizupName"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="35dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/quizup_name" />
+
+    <ImageView
+        android:id="@+id/logoIntro"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/quizupName"
+        android:layout_toStartOf="@+id/quizupName"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/log" />
+
+    <ImageView
+        android:id="@+id/quizupSubName"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/logoIntro"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/quizup_subname" />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spinView"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/quizupSubName"
+        android:layout_marginRight="200dp"
+        android:layout_marginTop="40dp"
+        android:visibility="visible"
+        app:SpinKit_Color="#b4a7c4"
+        app:SpinKit_Style="ThreeBounce" />
+
+
+</RelativeLayout>
+

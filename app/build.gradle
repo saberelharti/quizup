@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '26.0.2'
+    defaultConfig {
+        applicationId 'net.dm73.quizitup'
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 12
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildTypes.each {
+        it.buildConfigField 'String', 'API_CATEGORIES', ApiCategories
+        it.buildConfigField 'String', 'API_TIME_STAMP', ApiTimeStamp
+        it.buildConfigField 'String', 'API_QUIZS', ApiQuizs
+        it.buildConfigField 'String', 'API_TEST', ApiTest
+        it.buildConfigField 'String', 'TOKEN_SECRET', TokenSecret
+        it.buildConfigField 'String', 'ENCODED_PUBLIC_KEY', EncodedPublicKey
+        it.buildConfigField 'String', 'DECRYPTED', Decrypted
+        it.buildConfigField 'String', 'CODE_BASE', CodeBase
+
+    }
+
+    productFlavors {
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.android.support:support-v4:25.2.0'
+    compile 'com.android.support:design:25.2.0'
+    compile 'com.android.support:cardview-v7:25.2.0'
+    compile 'com.android.support:recyclerview-v7:25.2.0'
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.github.ybq:Android-SpinKit:1.1.0'
+    compile 'commons-codec:commons-codec:1.10'
+    compile 'com.google.firebase:firebase-ads:10.0.1'
+    compile 'com.google.firebase:firebase-core:10.0.1'
+    compile 'com.google.firebase:firebase-messaging:10.0.1'
+    compile 'com.anjlab.android.iab.v3:library:1.0.+'
+    compile 'com.android.support:support-annotations:25.0.1'
+    compile 'com.adcolony:sdk:3.1.0'
+
+    testCompile 'junit:junit:4.12'
+}
+
+apply plugin: 'com.google.gms.google-services'

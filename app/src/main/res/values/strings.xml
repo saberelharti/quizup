@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Quiz Up</string>
+
+    <string name="start_test">Tester</string>
+
+
+    <!--Button text-->
+    <string name="refaire_test">Refaire le test</string>
+    <string name="new_test">Nouveau Test</string>
+    <string name="shareTitle">Partagez votre résultat:</string>
+
+    <!--Errors Message-->
+    <string name="hors_connexion">Oups! Un problème est survenu, vérifiez le signal de votre connexion. Veuillez essayer à nouveau.</string>
+    <string name="hors_connexion_cloud">Vérifier le signal de votre connexion et appuyer sur le cloud pour essayer à nouveau</string>
+    <string name="loading">Chargement en cours ..</string>
+
+    <!--AdMOb unit IDS-->
+    <string name="banner_home_footer">ca-app-pub-3932610189822633/5444028101</string>
+    <string name="interstitial_full_screen">ca-app-pub-3932610189822633/8397494504</string>
+    <string name="interstitial_start_quiz">ca-app-pub-3932610189822633/4624928500</string>
+    <string name="app_id">ca-app-pub-3932610189822633~2490561701</string>
+
+    <!--Text Resource for Partage-->
+    <string name="shareURL">\n\nDepuis l\'application QuizUP: https://play.google.com/store/apps/details?id=net.dm73.quizitup</string>
+
+    <!--native ADs-->
+    <string name="ad_unit_id">ca-app-pub-3932610189822633/4848472909</string>
+    <string name="ad_unit_id_tab">ca-app-pub-3932610189822633/9741063708</string>
+
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_quiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.dm73.quizitup.QuizActivity">
+
+    <include layout="@layout/header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/containerTest"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/start_test"
+        android:layout_above="@+id/adMob"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_question"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="36sp"
+            android:padding="15dp"/>
+
+        <net.dm73.quizitup.util.nonSwippableViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/questionary"
+            android:visibility="gone"
+            android:layout_below="@+id/title_question" />
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/bar_progress_resultat"
+            style="?android:attr/progressBarStyle"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminate="true"
+            android:visibility="visible" />
+
+        <include layout="@layout/hors_connexion_layout"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:id="@+id/text_count"
+            android:text="1"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/ic_count"
+            android:textSize="30sp"
+            android:gravity="center_vertical|right"
+            android:paddingRight="15dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:layout_below="@+id/title_question"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <TextView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/num_test"
+            android:textSize="22sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/round_button_small"
+            android:gravity="center"
+            android:padding="4dp"
+            android:elevation="4dp"
+            android:layout_marginLeft="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/title_question"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/footer"/>
+
+    <ImageButton
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:id="@+id/move_right"
+        android:src="@drawable/ic_btn_next"
+        android:scaleType="centerInside"
+        android:background="@android:color/transparent"
+        android:elevation="4dp"
+        android:layout_below="@id/containerTest"
+        android:layout_marginTop="-18dp"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentRight="true"
+        android:visibility="visible"/>
+
+    <ImageButton
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:id="@+id/move_left"
+        android:src="@drawable/ic_btn_prev"
+        android:scaleType="centerInside"
+        android:background="@android:color/transparent"
+        android:elevation="4dp"
+        android:layout_below="@id/containerTest"
+        android:layout_marginTop="-18dp"
+        android:layout_marginLeft="25dp"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"/>
+
+
+
+
+</RelativeLayout>

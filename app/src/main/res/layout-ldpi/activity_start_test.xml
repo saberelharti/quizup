@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="net.dm73.quizitup.TestActivity">
+
+    <include layout="@layout/header" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/textDesc"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/start_test"
+        android:layout_above="@+id/adMob"
+        android:gravity="center_vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:scrollbarStyle="insideInset"
+            android:overScrollMode="never"
+            android:requiresFadingEdge="vertical"
+            android:fadingEdgeLength="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/start_text"
+                android:text="text"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"/>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <include layout="@layout/footer" />
+
+    <RelativeLayout
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:id="@+id/startTestBg"
+        android:layout_below="@+id/textDesc"
+        android:layout_marginTop="-45dp"
+        android:background="@drawable/round_layout"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/start"
+            android:text="@string/start_test"
+            android:textColor="#fff"
+            android:background="@drawable/round_button"
+            android:elevation="12dp"
+            android:shadowColor="#000"
+            android:textSize="17sp"
+            android:textAllCaps="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
